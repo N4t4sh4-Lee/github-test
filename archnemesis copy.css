@@ -1,0 +1,46 @@
+#img1 {
+    margin-top: 100px;
+    margin-left: 400px;
+    width: 200px;
+    transform: skewX(30deg);
+    animation: animation1;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation1 {
+    0% {
+        transform: translateX(400px) translateY(300px);
+    }
+    20% {
+        transform: rotate(0.5turn) translateX(0px);
+    }
+    40% {
+        transform: scale(2, 0.5) translateY(400px) translate3d(10px, 50%, 3em);
+    }
+    80% {
+        transform: perspective(500px) translateX(300px) skew(30deg, 20deg);
+    }
+    100% {
+        transform: rotate(0.2turn) rotateZ(10deg) translateX(-10px);
+    }
+}
+
+#img2 {
+    margin-left: -600px;
+    width: 150px;
+    height: 100px;
+    animation: animation2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation2 {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(10200px) translateY(300px);
+    }
+}
+    
